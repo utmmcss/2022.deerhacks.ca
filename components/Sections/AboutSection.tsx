@@ -9,7 +9,7 @@ interface IProps {
 const AboutSection: FC<IProps> = ({ sectionIndex }) => {
   return (
     <>
-      <ParallaxLayer offset={sectionIndex - 0.6} speed={2.5}>
+      <ParallaxLayer offset={sectionIndex - 0.55} speed={2.5}>
         <div
           className="relative"
           style={{
@@ -21,7 +21,7 @@ const AboutSection: FC<IProps> = ({ sectionIndex }) => {
           <Image src="/top-bush.svg" layout="fill" />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={sectionIndex - 0.03} speed={3.5}>
+      <ParallaxLayer offset={sectionIndex - 0.05} speed={3.5}>
         <div
           className="relative"
           style={{
