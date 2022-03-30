@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         top: '0',
         left: '0',
         background:
-          'linear-gradient(180deg, #1F73D2 0%, #78D2FF 16.51%, #54AAFE 54.69%, #492F94 91.57%, #F87891 96.42%, #FDB673 100%);',
+          'linear-gradient(180deg, #1F73D2 0%, #78D2FF 16.51%, #54AAFE 54.69%, #492F94 91.57%, #F87891 96.42%, #FDB673 100%)',
       }}
       ref={ref}
     >
