@@ -1,14 +1,10 @@
 import { FC } from 'react';
 import { ParallaxLayer } from '@react-spring/parallax';
 
-interface IProps {
-  sectionIndex: number;
-}
-
-const HomeSection: FC<IProps> = ({ sectionIndex }) => {
+const HomeSection: FC = () => {
   return (
     <ParallaxLayer
-      offset={sectionIndex}
+      offset={0}
       speed={1}
       style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
     >

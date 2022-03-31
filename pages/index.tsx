@@ -13,6 +13,7 @@ const Home: NextPage = () => {
     <Parallax
       pages={2}
       style={{
+        height: '100vh',
         top: '0',
         left: '0',
         background:

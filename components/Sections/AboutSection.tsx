@@ -2,43 +2,41 @@ import { FC } from 'react';
 import Image from 'next/image';
 import { ParallaxLayer } from '@react-spring/parallax';
 
-interface IProps {
-  sectionIndex: number;
-}
-
-const AboutSection: FC<IProps> = ({ sectionIndex }) => {
+const AboutSection: FC = () => {
   return (
     <div className="about-us-section">
-      <ParallaxLayer offset={sectionIndex - 0.55} speed={2.5}>
-        <div
-          className="relative"
-          style={{
-            width: '150%',
-            height: '200%',
-            left: '-20%',
-          }}
-        >
-          <Image src="/top-bush.svg" layout="fill" />
-        </div>
+      <ParallaxLayer offset={0.85} speed={2.5}>
+        <Image src="/top-bushes.svg" width={1834 * 2} height={603 * 2} />
       </ParallaxLayer>
-      <ParallaxLayer offset={sectionIndex - 0.05} speed={3.5}>
-        <div className="bottom-bush-container">
-          <div className="image-container">
-            <Image src="/bottom-bush.svg" layout="fill" />
-          </div>
-          <div className="content-container">
-            <h1>About DeerHacks</h1>
-            For the 1st time in UTM, DeerHacks, will bring together 500 innovators, technology
-            enthusiasts, designers, and entrepreneurs in a thrilling competition where they will
-            embark on a journey to build unique and impactful projects. What is a hackathon? An
-            event, typically lasting several days, in which a large number of people meet to engage
-            in collaborative computer programming. We look past this traditional definition of a
-            hackathon and take it to new heights. DeerHacks is the University of Toronto's
-            Mississauga first hackathon. At DeerHacks, we bring people together to make new friends,
-            learn new things, and bring new ideas to life. Sponsors We're currently in the process
-            of finding sponsors to make DeerHacks 2022 even greater than before. If you are
-            interested in sponsoring for DeerHacks, please email us at bla@mcss.ca
-          </div>
+      <ParallaxLayer offset={0.95} speed={3.5}>
+        <div className="bush-1-image-container">
+          <Image src="/bottom-bush1.svg" width={1834 * 2} height={527 * 2} />
+        </div>
+        <div className="content-container">
+          <h1>About DeerHacks</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tortor quam, pulvinar a
+            neque ut, volutpat placerat ligula. Sed ac tellus eget magna pretium finibus. Praesent
+            porta massa vel quam pellentesque molestie. Vestibulum ante ipsum primis in faucibus
+            orci luctus et ultrices posuere cubilia curae; Vestibulum ut nisl elit.
+          </p>
+          <h1>What is a hackathon?</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tortor quam, pulvinar a
+            neque ut, volutpat placerat ligula. Sed ac tellus eget magna pretium finibus. Praesent
+            porta massa vel quam pellentesque molestie. Vestibulum ante ipsum primis in faucibus
+            orci luctus et ultrices posuere cubilia curae; Vestibulum ut nisl elit.
+          </p>
+          <h1>Sponsors</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tortor quam, pulvinar a
+            neque ut, volutpat placerat ligula. Sed ac tellus eget magna pretium finibus. Praesent
+            porta massa vel quam pellentesque molestie. Vestibulum ante ipsum primis in faucibus
+            orci luctus et ultrices posuere cubilia curae; Vestibulum ut nisl elit.
+          </p>
+        </div>
+        <div className="bush-2-image-container">
+          <Image src="/bottom-bush2.svg" width={1834 * 2} height={527 * 2} />
         </div>
       </ParallaxLayer>
     </div>
