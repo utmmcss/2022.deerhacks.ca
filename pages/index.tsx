@@ -21,8 +21,8 @@ const Home: NextPage = () => {
       }}
       ref={ref}
     >
-      <HomeSection sectionIndex={0} />
-      <AboutSection sectionIndex={1} />
+      <HomeSection />
+      <AboutSection />
       <SponsorSection />
     </Parallax>
   );
