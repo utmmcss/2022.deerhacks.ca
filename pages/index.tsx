@@ -7,8 +7,9 @@ import HomeSection from '@components/Sections/HomeSection';
 import AboutSection from '@components/Sections/AboutSection';
 import SponsorSection from '@components/Sections/SponsorSection';
 
-const Home: NextPage = () => {
+const Home: NextPage<{ isMobile: boolean }> = ({ isMobile }) => {
   const ref = useRef<IParallax>(null);
+
   return (
     <Parallax
       pages={2}
@@ -22,10 +23,27 @@ const Home: NextPage = () => {
       ref={ref}
     >
       <HomeSection />
-      <AboutSection />
+      <AboutSection isMobile={isMobile} />
       <SponsorSection />
     </Parallax>
   );
+};
+
+Home.getInitialProps = (ctx) => {
+  // eslint-disable-next-line prefer-const
+  let isMobile = Boolean(
+    // @ts-ignore
+    (ctx.req ? ctx.req.headers['user-agent'] : navigator.userAgent).match(
+      /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i,
+    ),
+  );
+
+  // uncomment this line to force mobile mode
+  // isMobile = true;
+
+  return {
+    isMobile,
+  };
 };
 
 export default Home;
