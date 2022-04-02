@@ -17,8 +17,9 @@
     "paths": {
       "@components/*": ["components/*"],
       "@pages/*": ["pages/*"],
-      "@public/*": ["public/*"],
-    }
+      "@public/*": ["public/*"]
+    },
+    "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
