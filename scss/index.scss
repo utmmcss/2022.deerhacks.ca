@@ -2,7 +2,9 @@
 @import './colors';
 
 // import your custom scss files below here
+@import './AboutSection';
 
 body {
   overflow-x: hidden;
+  color: white;
 }
