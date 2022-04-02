@@ -11,8 +11,8 @@ const FooterSection: FC<IProps> = ({ isMobile }) => {
     <div className="footer-section">
       {/* <ParallaxLayer offset={0.85} speed={2.5}> */}
       <Image src="/top-bushes.svg" width={1834 * 2} height={603 * 2} priority />
-    {/* </ParallaxLayer> */}
-    {/* <ParallaxLayer offset={isMobile ? 0.89 : 0.95} speed={3.5}> */}
+      {/* </ParallaxLayer> */}
+      {/* <ParallaxLayer offset={isMobile ? 0.89 : 0.95} speed={3.5}> */}
       <div className="bush-1-image-container">
         <Image src="/bottom-bush1.svg" width={1834 * 2} height={527 * 2} priority />
       </div>
