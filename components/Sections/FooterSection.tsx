@@ -8,13 +8,9 @@ interface IProps {
 
 const FooterSection: FC<IProps> = ({ isMobile }) => {
   return (
-    <div className="footer-section">
-      <ParallaxLayer offset={isMobile ? 0.89 : 0.95} speed={3.5}>
-        <div className="footerbush-image-container">
-          <Image src="/footer-bush.svg" width={1834 * 2} height={527 * 2} priority />
-        </div>
-      </ParallaxLayer>
-    </div>
+    <ParallaxLayer offset={2} className="footer-section">
+      <Image src="/footer-bush.svg" width={1834 * 2} height={527 * 2} priority />
+    </ParallaxLayer>
   );
 };
 

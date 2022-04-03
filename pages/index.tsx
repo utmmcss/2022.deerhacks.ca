@@ -13,7 +13,7 @@ const Home: NextPage<{ isMobile: boolean }> = ({ isMobile }) => {
 
   return (
     <Parallax
-      pages={2}
+      pages={3}
       style={{
         height: '100vh',
         top: '0',
