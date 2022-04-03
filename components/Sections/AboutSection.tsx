@@ -4,9 +4,10 @@ import { ParallaxLayer } from '@react-spring/parallax';
 
 interface IProps {
   isMobile: boolean;
+  contentRef: React.RefObject<HTMLDivElement>;
 }
 
-const AboutSection: FC<IProps> = ({ isMobile }) => {
+const AboutSection: FC<IProps> = ({ isMobile, contentRef }) => {
   return (
     <div className="about-us-section">
       <ParallaxLayer offset={0.85} speed={2.5}>
@@ -16,7 +17,7 @@ const AboutSection: FC<IProps> = ({ isMobile }) => {
         <div className="bush-1-image-container">
           <Image src="/bottom-bush1.svg" width={1834 * 2} height={527 * 2} priority />
         </div>
-        <div className="content-container">
+        <div className="content-container" ref={contentRef}>
           <h1>About DeerHacks</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tortor quam, pulvinar a

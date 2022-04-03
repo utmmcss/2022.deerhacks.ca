@@ -9,6 +9,9 @@ import SponsorSection from '@components/Sections/SponsorSection';
 
 const Home: NextPage<{ isMobile: boolean }> = ({ isMobile }) => {
   const ref = useRef<IParallax>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  const executeScroll = () => ref?.current?.scrollTo(0.3);
 
   return (
     <Parallax
@@ -22,8 +25,8 @@ const Home: NextPage<{ isMobile: boolean }> = ({ isMobile }) => {
       }}
       ref={ref}
     >
-      <HomeSection />
-      <AboutSection isMobile={isMobile} />
+      <HomeSection goToAbout={executeScroll} />
+      <AboutSection isMobile={isMobile} contentRef={contentRef} />
       <SponsorSection />
     </Parallax>
   );
