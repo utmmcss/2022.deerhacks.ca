@@ -1,13 +1,15 @@
 import { FC, RefObject } from 'react';
 import Image from 'next/image';
+import classNames from 'classnames';
 
 import { IParallax } from '@react-spring/parallax';
 
 interface IProps {
   parallaxRef: RefObject<IParallax>;
+  scrollY: number;
 }
 
-const NavBar: FC<IProps> = ({ parallaxRef }) => {
+const NavBar: FC<IProps> = ({ parallaxRef, scrollY }) => {
   const NavBarLinks = {
     Home: 0,
     About: 0.25,
@@ -17,7 +19,11 @@ const NavBar: FC<IProps> = ({ parallaxRef }) => {
   };
 
   return (
-    <div className="navbar">
+    <div
+      className={classNames('navbar', {
+        navbar__active: scrollY !== 0,
+      })}
+    >
       <div className="image-container">
         <Image src="/logo.svg" layout="fill" priority />
       </div>
@@ -26,6 +32,7 @@ const NavBar: FC<IProps> = ({ parallaxRef }) => {
           type="button"
           className="navbar-link"
           onClick={() => parallaxRef?.current?.scrollTo(offset)}
+          key={label}
         >
           {label}
         </button>

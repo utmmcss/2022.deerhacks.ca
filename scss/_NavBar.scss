@@ -7,6 +7,10 @@
   height: 80px;
   padding: 0px 20px;
 
+  &__active {
+    background-color: #1f73d2;
+  }
+
   .image-container {
     width: 70px;
     position: relative;

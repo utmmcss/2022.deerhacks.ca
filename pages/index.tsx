@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import type { NextPage } from 'next';
 import { Parallax } from '@react-spring/parallax';
 import type { IParallax } from '@react-spring/parallax';
@@ -15,10 +15,29 @@ interface IProps {
 
 const Home: NextPage<IProps> = ({ isMobile }) => {
   const parallaxRef = useRef<IParallax>(null);
+  const [scrollY, setScrollY] = useState(0);
+
+  // eslint-disable-next-line consistent-return
+  useEffect(() => {
+    const updateScrollPosition = (e: any) => {
+      setScrollY(e.target.scrollTop);
+    };
+
+    if (parallaxRef && parallaxRef.current) {
+      parallaxRef.current.container.current.addEventListener('scroll', updateScrollPosition, false);
+      return () => {
+        parallaxRef?.current?.container.current.removeEventListener(
+          'scroll',
+          updateScrollPosition,
+          false,
+        );
+      };
+    }
+  }, []);
 
   return (
     <>
-      {!isMobile && <NavBar parallaxRef={parallaxRef} />}
+      {!isMobile && <NavBar parallaxRef={parallaxRef} scrollY={scrollY} />}
       <Parallax
         pages={3}
         style={{
