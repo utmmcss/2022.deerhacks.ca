@@ -1,11 +1,7 @@
 import { FC } from 'react';
 import { ParallaxLayer } from '@react-spring/parallax';
 
-interface IProps {
-  goToAbout: () => void;
-}
-
-const HomeSection: FC<IProps> = ({ goToAbout }) => {
+const HomeSection: FC = () => {
   return (
     <ParallaxLayer
       offset={0}
@@ -13,9 +9,6 @@ const HomeSection: FC<IProps> = ({ goToAbout }) => {
       style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
     >
       <p>Home Section</p>
-      <button type="button" onClick={goToAbout}>
-        Scroll to About
-      </button>
     </ParallaxLayer>
   );
 };

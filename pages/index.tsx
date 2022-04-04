@@ -6,29 +6,39 @@ import type { IParallax } from '@react-spring/parallax';
 import HomeSection from '@components/Sections/HomeSection';
 import AboutSection from '@components/Sections/AboutSection';
 import SponsorSection from '@components/Sections/SponsorSection';
+import NavBar from '@components/NavBar';
+import useWindowSize from '@hooks/UseWindowSize';
 
-const Home: NextPage<{ isMobile: boolean }> = ({ isMobile }) => {
+interface IProps {
+  isMobile: boolean;
+}
+
+const Home: NextPage<IProps> = ({ isMobile }) => {
   const ref = useRef<IParallax>(null);
   const contentRef = useRef<HTMLDivElement>(null);
+  const { height } = useWindowSize();
 
   const executeScroll = () => ref?.current?.scrollTo(0.3);
 
   return (
-    <Parallax
-      pages={2}
-      style={{
-        height: '100vh',
-        top: '0',
-        left: '0',
-        background:
-          'linear-gradient(180deg, #1F73D2 0%, #78D2FF 16.51%, #54AAFE 54.69%, #492F94 91.57%, #F87891 96.42%, #FDB673 100%)',
-      }}
-      ref={ref}
-    >
-      <HomeSection goToAbout={executeScroll} />
-      <AboutSection isMobile={isMobile} contentRef={contentRef} />
-      <SponsorSection />
-    </Parallax>
+    <>
+      <NavBar />
+      <Parallax
+        pages={2}
+        style={{
+          height: '100vh',
+          top: '0',
+          left: '0',
+          background:
+            'linear-gradient(180deg, #1F73D2 0%, #78D2FF 16.51%, #54AAFE 54.69%, #492F94 91.57%, #F87891 96.42%, #FDB673 100%)',
+        }}
+        ref={ref}
+      >
+        <HomeSection goToAbout={executeScroll} />
+        <AboutSection isMobile={isMobile} contentRef={contentRef} />
+        <SponsorSection />
+      </Parallax>
+    </>
   );
 };
 
