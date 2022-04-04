@@ -6,25 +6,21 @@ import type { IParallax } from '@react-spring/parallax';
 import HomeSection from '@components/Sections/HomeSection';
 import AboutSection from '@components/Sections/AboutSection';
 import SponsorSection from '@components/Sections/SponsorSection';
+import QAndASection from '@components/Sections/QAndASection';
 import NavBar from '@components/NavBar';
-import useWindowSize from '@hooks/UseWindowSize';
 
 interface IProps {
   isMobile: boolean;
 }
 
 const Home: NextPage<IProps> = ({ isMobile }) => {
-  const ref = useRef<IParallax>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
-  const { height } = useWindowSize();
-
-  const executeScroll = () => ref?.current?.scrollTo(0.3);
+  const parallaxRef = useRef<IParallax>(null);
 
   return (
     <>
-      <NavBar />
+      {!isMobile && <NavBar parallaxRef={parallaxRef} />}
       <Parallax
-        pages={2}
+        pages={3}
         style={{
           height: '100vh',
           top: '0',
@@ -32,11 +28,12 @@ const Home: NextPage<IProps> = ({ isMobile }) => {
           background:
             'linear-gradient(180deg, #1F73D2 0%, #78D2FF 16.51%, #54AAFE 54.69%, #492F94 91.57%, #F87891 96.42%, #FDB673 100%)',
         }}
-        ref={ref}
+        ref={parallaxRef}
       >
-        <HomeSection goToAbout={executeScroll} />
-        <AboutSection isMobile={isMobile} contentRef={contentRef} />
+        <HomeSection />
+        <AboutSection isMobile={isMobile} />
         <SponsorSection />
+        <QAndASection />
       </Parallax>
     </>
   );
@@ -51,7 +48,7 @@ Home.getInitialProps = (ctx) => {
     ),
   );
 
-  // uncomment this line to force mobile mode
+  // uncomment this line to force mobile mode while developing
   // isMobile = true;
 
   return {
