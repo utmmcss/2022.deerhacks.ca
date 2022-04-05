@@ -13,7 +13,7 @@ interface IProps {
 const NavBar: FC<IProps> = ({ parallaxRef, scrollY }) => {
   const NavBarLinks = {
     Home: 0,
-    About: 0.25,
+    About: 0.26,
     Sponsors: 0.9,
     'Q&A': 1.8,
     Contact: 3,
