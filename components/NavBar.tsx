@@ -3,6 +3,7 @@ import Image from 'next/image';
 import classNames from 'classnames';
 
 import { IParallax } from '@react-spring/parallax';
+import { useSpring, animated } from 'react-spring';
 
 interface IProps {
   parallaxRef: RefObject<IParallax>;
@@ -14,16 +15,15 @@ const NavBar: FC<IProps> = ({ parallaxRef, scrollY }) => {
     Home: 0,
     About: 0.25,
     Sponsors: 0.9,
-    'Q&A': 1.9,
+    'Q&A': 1.8,
     Contact: 3,
   };
+  const props = useSpring({
+    backgroundColor: scrollY <= 50 ? 'rgb(31, 115, 210, 0)' : 'rgb(31, 115, 210, 1)',
+  });
 
   return (
-    <div
-      className={classNames('navbar', {
-        navbar__active: scrollY !== 0,
-      })}
-    >
+    <animated.div className={classNames('navbar')} style={props}>
       <div className="image-container">
         <Image src="/logo.svg" layout="fill" priority />
       </div>
@@ -37,7 +37,7 @@ const NavBar: FC<IProps> = ({ parallaxRef, scrollY }) => {
           {label}
         </button>
       ))}
-    </div>
+    </animated.div>
   );
 };
 
