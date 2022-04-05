@@ -43,7 +43,7 @@ const Home: NextPage<IProps> = ({ isMobile }) => {
         style={{
           height: '100vh',
           top: '0',
-          left: '0'}}
+          left: '0' }}
         ref={parallaxRef}
       >
         <ParallaxLayer offset={0} speed={0} style={{ background: 'linear-gradient(180deg, rgba(31,115,210,1) 0%, rgba(120,210,255,1) 100%)' }} />
