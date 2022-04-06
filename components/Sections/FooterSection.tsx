@@ -1,6 +1,9 @@
 import { FC } from 'react';
 import Image from 'next/image';
 import { ParallaxLayer } from '@react-spring/parallax';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 
 interface IProps {
   isMobile: boolean;
@@ -10,7 +13,7 @@ const FooterSection: FC<IProps> = ({ isMobile }) => {
   return (
     <div className="footer-section">
       <ParallaxLayer offset={2} className="footer-section">
-        <Image src="/footer-bush.svg" width={1834 * 2} height={527 * 2} priority />
+        <Image src="/footer-bush.svg" width={1834 * 2} height={375 * 2} priority />
       </ParallaxLayer>
       <ParallaxLayer offset={2} speed={3.5}>
         <div className="content-container">
@@ -20,9 +23,12 @@ const FooterSection: FC<IProps> = ({ isMobile }) => {
             <p>3359 Mississauga Rd, Mississauga, ON, Canada</p>
           </div>
           <div className="social">
-            <p>Github</p>
-            <p>Instagram</p>
-            <p>Discord</p>
+            <h1>Social Media</h1>
+            <div className="icons">
+              <p><a href="/"><GitHubIcon fontSize="large" /> Github</a></p>
+              <p><a href="/"><InstagramIcon fontSize="large" /> Instagram</a></p>
+              <p><a href="/"><GitHubIcon fontSize="large" /> Discord</a></p>
+            </div>
           </div>
         </div>
       </ParallaxLayer>
