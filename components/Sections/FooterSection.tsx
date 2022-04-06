@@ -4,7 +4,6 @@ import { ParallaxLayer } from '@react-spring/parallax';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-
 interface IProps {
   isMobile: boolean;
 }
