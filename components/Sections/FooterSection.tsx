@@ -26,13 +26,22 @@ const FooterSection: FC<IProps> = ({ isMobile }) => {
             <h1>Social Media</h1>
             <div className="icons">
               <p>
-                <a href="/"><GitHubIcon fontSize="large" /> Github</a>
-                </p>
-              <p>
-                <a href="/"><InstagramIcon fontSize="large" /> Instagram</a>
+                <a href="https://github.com/utmmcss">
+                  <GitHubIcon fontSize="large" />
+                  Github
+                </a>
               </p>
               <p>
-                <a href="/"><GitHubIcon fontSize="large" /> Discord</a>
+                <a href="https://www.instagram.com/utmmcss/?hl=en">
+                  <InstagramIcon fontSize="large" />
+                  Instagram
+                </a>
+              </p>
+              <p>
+                <a href="https://www.instagram.com/utmmcss/?hl=en">
+                  <GitHubIcon fontSize="large" />
+                  Discord
+                </a>
               </p>
             </div>
           </div>
