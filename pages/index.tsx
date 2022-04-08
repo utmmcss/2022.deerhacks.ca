@@ -70,7 +70,7 @@ Home.getInitialProps = (ctx) => {
   );
 
   // uncomment this line to force mobile mode while developing
-  isMobile = true;
+  // isMobile = true;
 
   return {
     isMobile,

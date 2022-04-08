@@ -10,18 +10,41 @@
     padding-bottom: 50px;
     position: relative;
 
+    .get-in-touch {
+      @media (max-width: 768px) {
+        padding-right: 10px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      justify-content: center;
+    }
+
     h2 {
       @apply text-base md:text-xl;
       margin-bottom: 10px;
     }
 
+    span, p {
+      @apply text-sm md:text-base;
+    }
+
     .media-icons {
-      display: flex;
+      @media (min-width: 768px) {
+        display: flex;
+      }
 
       a {
         display: flex;
         align-items: center;
         margin-right: 40px;
+
+        @media (max-width: 768px) {
+          padding-bottom: 5px;
+        }
       }
 
       span {
