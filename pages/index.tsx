@@ -6,6 +6,7 @@ import type { IParallax } from '@react-spring/parallax';
 import HomeSection from '@components/Sections/HomeSection';
 import AboutSection from '@components/Sections/AboutSection';
 import SponsorSection from '@components/Sections/SponsorSection';
+import FooterSection from '@components/Sections/FooterSection';
 import QAndASection from '@components/Sections/QAndASection';
 import NavBar from '@components/NavBar';
 
@@ -53,6 +54,7 @@ const Home: NextPage<IProps> = ({ isMobile }) => {
         <AboutSection isMobile={isMobile} />
         <SponsorSection />
         <QAndASection />
+        <FooterSection isMobile={isMobile} />
       </Parallax>
     </>
   );
