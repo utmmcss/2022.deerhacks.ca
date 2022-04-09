@@ -1,7 +1,7 @@
 .footer-section {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 
   .content-container {
     background-color: #0d3910;
@@ -28,7 +28,8 @@
       margin-bottom: 10px;
     }
 
-    span, p {
+    span,
+    p {
       @apply text-sm md:text-base;
     }
 
