@@ -11,11 +11,29 @@ interface IProps {
 const FooterSection: FC<IProps> = ({ isMobile }) => {
   return (
     <>
-      <ParallaxLayer offset={2.63} speed={-3}>
-        <div className="flex justify-end pr-10">
-          <Image src="/sun.svg" width={154} height={154} priority />
-        </div>
-      </ParallaxLayer>
+      {isMobile ? (
+        <ParallaxLayer offset={2.75} speed={-3}>
+          <div className="flex justify-end pr-5">
+            <Image
+              src="/sun.svg"
+              width={isMobile ? 77 : 154}
+              height={isMobile ? 77 : 154}
+              priority
+            />
+          </div>
+        </ParallaxLayer>
+      ) : (
+        <ParallaxLayer offset={2.63} speed={-3}>
+          <div className="flex justify-end pr-10">
+            <Image
+              src="/sun.svg"
+              width={isMobile ? 77 : 154}
+              height={isMobile ? 77 : 154}
+              priority
+            />
+          </div>
+        </ParallaxLayer>
+      )}
       <ParallaxLayer offset={2} className="footer-section">
         <Image src="/footer-bushes.svg" width={1834 * 10} height={194 * 10} priority />
         <div className="content-container">
