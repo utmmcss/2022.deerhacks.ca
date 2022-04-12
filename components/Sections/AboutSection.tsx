@@ -39,7 +39,8 @@ const AboutSection: FC<IProps> = ({ isMobile }) => {
             We're currently in the process of finding sponsors to make DeerHacks
             2022 even greater than before.
             If you are interested in sponsoring for DeerHacks,
-            please email us at bla@mcss.ca
+            please email us at 
+            <a href="mailto:mcss@utmsu.ca"> mcss@utmsu.ca</a>
           </p>
         </div>
         <div className="bush-2-image-container">
