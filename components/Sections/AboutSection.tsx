@@ -19,21 +19,27 @@ const AboutSection: FC<IProps> = ({ isMobile }) => {
         <div className="content-container">
           <h1>About DeerHacks</h1>
           <p>
-          For the 1st time in UTM, DeerHacks, will bring together 500 innovators, technology enthusiasts, 
-          designers, and entrepreneurs in a thrilling competition where they will embark on a journey to 
-          build unique and impactful projects.
+            For the 1st time in UTM, DeerHacks, will bring together 500 innovators,
+            technology enthusiasts, designers, and entrepreneurs in a thrilling
+            competition where they will embark on a journey to
+            build unique and impactful projects.
           </p>
           <h1>What is a hackathon?</h1>
           <p>
-          An event, typically lasting several days, in which a large number of people meet to engage in 
-          collaborative computer programming. We look past this traditional definition of a hackathon and take it to new heights. 
-          DeerHacks is the University of Toronto's Mississauga first hackathon. 
-          At DeerHacks, we bring people together to make new friends, learn new things, and bring new ideas to life.
+            An event, typically lasting several days, in which a large number of
+            people meet to engage in collaborative computer programming.
+            We look past this traditional definition of
+            a hackathon and take it to new heights.
+            DeerHacks is the University of Toronto's Mississauga first hackathon.
+            At DeerHacks, we bring people together to make new friends, learn new
+            things, and bring new ideas to life.
           </p>
           <h1>Sponsors</h1>
           <p>
-          We're currently in the process of finding sponsors to make DeerHacks 2022 even greater than before. 
-          If you are interested in sponsoring for DeerHacks, please email us at bla@mcss.ca
+            We're currently in the process of finding sponsors to make DeerHacks
+            2022 even greater than before.
+            If you are interested in sponsoring for DeerHacks,
+            please email us at bla@mcss.ca
           </p>
         </div>
         <div className="bush-2-image-container">
