@@ -53,8 +53,8 @@ const Home: NextPage<IProps> = ({ isMobile }) => {
         <HomeSection />
         <AboutSection isMobile={isMobile} />
         <SponsorSection />
-        <QAndASection />
         <FooterSection isMobile={isMobile} />
+        <QAndASection />
       </Parallax>
     </>
   );
