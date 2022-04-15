@@ -1,5 +1,4 @@
 import { FC, useState } from 'react';
-import Link from 'next/link';
 import { ParallaxLayer } from '@react-spring/parallax';
 
 const QAndASection: FC = () => {

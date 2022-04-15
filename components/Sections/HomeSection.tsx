@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import Image from 'next/image';
-
 import { ParallaxLayer } from '@react-spring/parallax';
 
 interface IProps {
