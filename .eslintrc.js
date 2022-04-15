@@ -24,6 +24,9 @@ module.exports = {
     'arrow-body-style': 0,
     'react/no-unescaped-entities': 0,
     'react/function-component-definition': 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
   },
   parser: '@typescript-eslint/parser',
 };

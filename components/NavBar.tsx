@@ -24,7 +24,7 @@ const NavBar: FC<IProps> = ({ parallaxRef, scrollY }) => {
 
   return (
     <animated.div className={classNames('navbar')} style={props}>
-      <div className="image-container">
+      <div className="image-container" onClick={() => parallaxRef?.current?.scrollTo(0)}>
         <Image src="/logo.svg" layout="fill" priority />
       </div>
       {Object.entries(NavBarLinks).map(([label, offset]) => (

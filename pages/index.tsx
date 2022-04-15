@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import type { IParallax } from '@react-spring/parallax';
 
@@ -38,19 +39,43 @@ const Home: NextPage<IProps> = ({ isMobile }) => {
 
   return (
     <>
+      <Head>
+        <title>DeerHacks</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       {!isMobile && <NavBar parallaxRef={parallaxRef} scrollY={scrollY} />}
       <Parallax
         pages={3}
         style={{
           height: '100vh',
           top: '0',
-          left: '0' }}
+          left: '0',
+        }}
         ref={parallaxRef}
       >
-        <ParallaxLayer offset={0} speed={0} style={{ background: 'linear-gradient(180deg, rgba(31,115,210,1) 0%, rgba(120,210,255,1) 100%)' }} />
-        <ParallaxLayer offset={1} speed={0} style={{ background: 'linear-gradient(180deg, rgba(120,210,255,1) 0%, rgba(84,170,254,1) 100%)' }} />
-        <ParallaxLayer offset={2} speed={0} style={{ background: 'linear-gradient(180deg, rgba(84,170,254,1) 0%, rgba(73,47,148,1) 80%, rgba(248,120,145,1) 90%, rgba(253,182,115,1) 100%)' }} />
-        <HomeSection />
+        <ParallaxLayer
+          offset={0}
+          speed={0}
+          style={{
+            background: 'linear-gradient(180deg, rgba(31,115,210,1) 0%, rgba(120,210,255,1) 100%)',
+          }}
+        />
+        <ParallaxLayer
+          offset={1}
+          speed={0}
+          style={{
+            background: 'linear-gradient(180deg, rgba(120,210,255,1) 0%, rgba(84,170,254,1) 100%)',
+          }}
+        />
+        <ParallaxLayer
+          offset={2}
+          speed={0}
+          style={{
+            background:
+              'linear-gradient(180deg, rgba(84,170,254,1) 0%, rgba(73,47,148,1) 80%, rgba(248,120,145,1) 90%, rgba(253,182,115,1) 100%)',
+          }}
+        />
+        <HomeSection isMobile={isMobile} />
         <AboutSection isMobile={isMobile} />
         <SponsorSection />
         <FooterSection isMobile={isMobile} />
