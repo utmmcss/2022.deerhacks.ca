@@ -19,24 +19,28 @@ const AboutSection: FC<IProps> = ({ isMobile }) => {
         <div className="content-container">
           <h1>About DeerHacks</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tortor quam, pulvinar a
-            neque ut, volutpat placerat ligula. Sed ac tellus eget magna pretium finibus. Praesent
-            porta massa vel quam pellentesque molestie. Vestibulum ante ipsum primis in faucibus
-            orci luctus et ultrices posuere cubilia curae; Vestibulum ut nisl elit.
+            For the 1st time in UTM, DeerHacks, will bring together numerous innovators,
+            technology enthusiasts, designers, and entrepreneurs in a thrilling
+            competition where they will embark on a journey to
+            build unique and impactful projects.
           </p>
           <h1>What is a hackathon?</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tortor quam, pulvinar a
-            neque ut, volutpat placerat ligula. Sed ac tellus eget magna pretium finibus. Praesent
-            porta massa vel quam pellentesque molestie. Vestibulum ante ipsum primis in faucibus
-            orci luctus et ultrices posuere cubilia curae; Vestibulum ut nisl elit.
+            An event, typically lasting several days, in which a large number of
+            people meet to engage in collaborative computer programming.
+            We look past this traditional definition of
+            a hackathon and take it to new heights.
+            DeerHacks is the University of Toronto's Mississauga first hackathon.
+            At DeerHacks, we bring people together to make new friends, learn new
+            things, and bring new ideas to life.
           </p>
           <h1>Sponsors</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tortor quam, pulvinar a
-            neque ut, volutpat placerat ligula. Sed ac tellus eget magna pretium finibus. Praesent
-            porta massa vel quam pellentesque molestie. Vestibulum ante ipsum primis in faucibus
-            orci luctus et ultrices posuere cubilia curae; Vestibulum ut nisl elit.
+            We're currently in the process of finding sponsors to make DeerHacks
+            2022 even greater than before.
+            If you are interested in sponsoring for DeerHacks,
+            please email us at
+            <a href="mailto:mcss@utmsu.ca"> mcss@utmsu.ca</a>
           </p>
         </div>
         <div className="bush-2-image-container">
