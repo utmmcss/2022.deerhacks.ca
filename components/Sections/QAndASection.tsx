@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import Link from 'next/link';
 import { ParallaxLayer } from '@react-spring/parallax';
 
 const QAndASection: FC = () => {
@@ -28,7 +29,14 @@ const QAndASection: FC = () => {
       content: (
         <p>
           No problem! Feel free to reach out to us at&nbsp;
-          <a className="text-cyan-600" href="mailto:mcss@utmsu.ca">
+          <a
+            className="text-cyan-600"
+            href="mailto:mcss@utmsu.ca"
+            onClick={() => {
+              // a hack we have to do since we are doing prevent default on line 58
+              window.location.href = 'mailto:mcss@utmsu.ca';
+            }}
+          >
             mcss@utmsu.ca
           </a>
           &nbsp;and we will get back to you as soon as possible.

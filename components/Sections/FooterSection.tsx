@@ -39,7 +39,7 @@ const FooterSection: FC<IProps> = ({ isMobile }) => {
         <div className="content-container">
           <div className="get-in-touch">
             <h2>Get In touch</h2>
-            <p>mcss@utmsu.ca</p>
+            <a href="mailto:mcss@utmsu.ca">mcss@utmsu.ca</a>
             <p>3359 Mississauga Rd, Mississauga, ON, Canada</p>
           </div>
           <div>
