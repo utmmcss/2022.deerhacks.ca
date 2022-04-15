@@ -44,13 +44,33 @@ const Home: NextPage<IProps> = ({ isMobile }) => {
         style={{
           height: '100vh',
           top: '0',
-          left: '0' }}
+          left: '0',
+        }}
         ref={parallaxRef}
       >
-        <ParallaxLayer offset={0} speed={0} style={{ background: 'linear-gradient(180deg, rgba(31,115,210,1) 0%, rgba(120,210,255,1) 100%)' }} />
-        <ParallaxLayer offset={1} speed={0} style={{ background: 'linear-gradient(180deg, rgba(120,210,255,1) 0%, rgba(84,170,254,1) 100%)' }} />
-        <ParallaxLayer offset={2} speed={0} style={{ background: 'linear-gradient(180deg, rgba(84,170,254,1) 0%, rgba(73,47,148,1) 80%, rgba(248,120,145,1) 90%, rgba(253,182,115,1) 100%)' }} />
-        <HomeSection />
+        <ParallaxLayer
+          offset={0}
+          speed={0}
+          style={{
+            background: 'linear-gradient(180deg, rgba(31,115,210,1) 0%, rgba(120,210,255,1) 100%)',
+          }}
+        />
+        <ParallaxLayer
+          offset={1}
+          speed={0}
+          style={{
+            background: 'linear-gradient(180deg, rgba(120,210,255,1) 0%, rgba(84,170,254,1) 100%)',
+          }}
+        />
+        <ParallaxLayer
+          offset={2}
+          speed={0}
+          style={{
+            background:
+              'linear-gradient(180deg, rgba(84,170,254,1) 0%, rgba(73,47,148,1) 80%, rgba(248,120,145,1) 90%, rgba(253,182,115,1) 100%)',
+          }}
+        />
+        <HomeSection isMobile={isMobile} />
         <AboutSection isMobile={isMobile} />
         <SponsorSection />
         <FooterSection isMobile={isMobile} />
