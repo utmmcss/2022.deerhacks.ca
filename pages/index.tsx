@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import type { IParallax } from '@react-spring/parallax';
 
@@ -38,6 +39,10 @@ const Home: NextPage<IProps> = ({ isMobile }) => {
 
   return (
     <>
+      <Head>
+        <title>DeerHacks</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       {!isMobile && <NavBar parallaxRef={parallaxRef} scrollY={scrollY} />}
       <Parallax
         pages={3}
