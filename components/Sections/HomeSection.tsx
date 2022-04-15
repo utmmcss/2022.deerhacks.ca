@@ -26,7 +26,12 @@ const HomeSection: FC<IProps> = ({ isMobile }) => {
           </div>
           <h1>DeerHacks</h1>
           <h2>April 29th - May 1st, 2022</h2>
-          <div className="button-container">
+          <div
+            className="button-container"
+            onClick={() => {
+              window.location.href = 'https://njl3g96ng3s.typeform.com/to/HY9IidQc';
+            }}
+          >
             <button type="button">Apply Now</button>
           </div>
         </div>
