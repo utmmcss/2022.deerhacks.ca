@@ -33,7 +33,7 @@ const QAndASection: FC = () => {
   ];
 
   return (
-    <ParallaxLayer offset={1.8} className="qasection">
+    <ParallaxLayer offset={1.8} className="qa-section">
       <div className="container">
         <h1 className="text-white text-5xl text-center mb-10">Frequently Asked Questions</h1>
         <div>
