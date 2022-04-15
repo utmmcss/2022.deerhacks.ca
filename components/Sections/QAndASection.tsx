@@ -6,29 +6,34 @@ const QAndASection: FC = () => {
 
   const summaryDetails = [
     {
-      title: 'Question Test 1',
+      title: 'When and where is DeerHacks happening?',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quas distinctio minus eveniet sed numquam praesentium earum necessitatibus laborum possimus libero tenetur, obcaecati facilis mollitia maxime? Asperiores eius at dolores!',
+        'DeerHacks will be happing from April 29th - May 1st, 2022. THe hackathon will fully online tis year.',
     },
     {
-      title: 'Question Test 2',
+      title: 'Do I need to have a team?',
       content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quas distinctio minus eveniet sed numquam praesentium earum necessitatibus laborum possimus libero tenetur, obcaecati facilis mollitia maxime? Asperiores eius at dolores!',
+        'Nope! We welcome both individual and team submissions! Although if you are interested in finding teammates, you can indicate so in the registraion form.',
     },
     {
-      title: 'Question Test 3',
-      content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quas distinctio minus eveniet sed numquam praesentium earum necessitatibus laborum possimus libero tenetur, obcaecati facilis mollitia maxime? Asperiores eius at dolores!',
+      title: 'How many hackers are allowed per team?',
+      content: 'Each team can have up to 4 members',
     },
     {
-      title: 'Question Test 4',
-      content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quas distinctio minus eveniet sed numquam praesentium earum necessitatibus laborum possimus libero tenetur, obcaecati facilis mollitia maxime? Asperiores eius at dolores!',
+      title: "What's the deadline to apply?",
+      content: 'We will be closing applications on April 26th at 11:59pm.',
     },
     {
-      title: 'Question Test 5',
-      content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quas distinctio minus eveniet sed numquam praesentium earum necessitatibus laborum possimus libero tenetur, obcaecati facilis mollitia maxime? Asperiores eius at dolores!',
+      title: 'I still have a question...',
+      content: (
+        <p>
+          No problem! Feel free to reach out to us at&nbsp;
+          <a className="text-cyan-600" href="mailto:mcss@utmsu.ca">
+            mcss@utmsu.ca
+          </a>
+          &nbsp;and we will get back to you as soon as possible.
+        </p>
+      ),
     },
   ];
 
