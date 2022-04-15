@@ -19,7 +19,7 @@ const AboutSection: FC<IProps> = ({ isMobile }) => {
         <div className="content-container">
           <h1>About DeerHacks</h1>
           <p>
-            For the 1st time in UTM, DeerHacks, will bring together 500 innovators,
+            For the 1st time in UTM, DeerHacks, will bring together numerous innovators,
             technology enthusiasts, designers, and entrepreneurs in a thrilling
             competition where they will embark on a journey to
             build unique and impactful projects.
