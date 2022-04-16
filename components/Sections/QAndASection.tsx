@@ -8,7 +8,7 @@ const QAndASection: FC = () => {
     {
       title: 'When and where is DeerHacks happening?',
       content:
-        'DeerHacks will be happing from April 29th - May 1st, 2022. THe hackathon will fully online tis year.',
+        'DeerHacks will be happening from April 29th - May 1st, 2022. The hackathon will be fully online this year.',
     },
     {
       title: 'Do I need to have a team?',
@@ -17,7 +17,7 @@ const QAndASection: FC = () => {
     },
     {
       title: 'How many hackers are allowed per team?',
-      content: 'Each team can have up to 4 members',
+      content: 'Each team can have up to 4 members.',
     },
     {
       title: "What's the deadline to apply?",
