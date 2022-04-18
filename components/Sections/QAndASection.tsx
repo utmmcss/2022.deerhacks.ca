@@ -8,7 +8,7 @@ const QAndASection: FC = () => {
     {
       title: 'When and where is DeerHacks happening?',
       content:
-        'DeerHacks will be happening from April 29th - May 1st, 2022. The hackathon will be fully online this year.',
+        'DeerHacks will be happening from April 29th - May 1st, 2022. The hackathon will be hybrid this year.',
     },
     {
       title: 'Do I need to have a team?',
