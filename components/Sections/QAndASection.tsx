@@ -13,7 +13,7 @@ const QAndASection: FC = () => {
     {
       title: 'Do I need to have a team?',
       content:
-        'Nope! We welcome both individual and team submissions! Although if you are interested in finding teammates, you can indicate so in the registraion form.',
+        'Nope! We welcome both individual and team submissions! Although if you are interested in finding teammates, you can indicate so in the registration form.',
     },
     {
       title: 'How many hackers are allowed per team?',
