@@ -53,7 +53,7 @@ const FooterSection: FC<IProps> = ({ isMobile }) => {
                 <InstagramIcon fontSize={isMobile ? 'medium' : 'large'} />
                 <span>Instagram</span>
               </a>
-              <a href="https://discord.gg/t477RN2q7N">
+              <a href="https://discord.gg/gCNxz8kGye">
                 <Image src="/discord.svg" width={isMobile ? 24 : 35} height={isMobile ? 24 : 35} />
                 <span>Discord</span>
               </a>
