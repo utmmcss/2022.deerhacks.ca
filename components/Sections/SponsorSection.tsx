@@ -38,7 +38,7 @@ const Cloud: FC<ICloud> = ({ size, imgSrc }) => {
 
 const SponsorSection: FC = () => {
   const sponsors = {
-    large: ['/uipath-logo.svg'],
+    large: ['/uipath-logo.svg', '/green-light-consulting.png'],
     medium: [],
     small: [],
   };
