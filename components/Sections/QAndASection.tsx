@@ -21,7 +21,7 @@ const QAndASection: FC = () => {
     },
     {
       title: "What's the deadline to apply?",
-      content: 'We will be closing applications on April 26th at 11:59pm.',
+      content: 'We will be closing applications on April 28th at 11:59pm.',
     },
     {
       title: 'I still have a question...',
